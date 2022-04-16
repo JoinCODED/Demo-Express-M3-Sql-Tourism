@@ -1,0 +1,65 @@
+{
+  "info": {
+    "_postman_id": "60ad02cb-0c0c-4dc9-83f9-dc3f4042d6bf",
+    "name": "Tourism API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get all monuments",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/monuments",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["monuments"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create a new monuments",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/monuments",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["monuments"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Delete a monuments by id",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/monuments/1",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["monuments", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update monuments",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "url": {
+          "raw": "localhost:8000/monuments/1",
+          "host": ["localhost"],
+          "port": "8000",
+          "path": ["monuments", "1"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
