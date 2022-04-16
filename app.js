@@ -14,7 +14,16 @@ const run = async () => {
     console.error('Error connecting to the database: ', error);
   }
 };
-
 run();
 app.use(express.json());
 app.use('/monuments', monumentsRoutes);
+app.use((req, res, next) => {
+  res.status(404).json({ message: 'Path not found' });
+});
+
+app.use((err, req, res, next) => {
+  res.status(err.status || 500);
+  res.json({
+    message: err.message || 'Internal Server Error',
+  });
+});
